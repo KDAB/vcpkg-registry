@@ -1,5 +1,9 @@
 {
   "default": {
+    "kdutils": {
+      "baseline": "0.1.12",
+      "port-version": 0
+    },
     "whereami": {
       "baseline": "0.0.1",
       "port-version": 0

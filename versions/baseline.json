@@ -1,5 +1,9 @@
 {
   "default": {
+    "kdgpu": {
+      "baseline": "0.10.0",
+      "port-version": 0
+    },
     "kdutils": {
       "baseline": "0.1.12",
       "port-version": 0

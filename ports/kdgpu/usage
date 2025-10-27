@@ -1,0 +1,5 @@
+kdgpu provides CMake targets:
+
+find_package(KDGpu REQUIRED)
+
+target_link_libraries(main PRIVATE KDGpu::KDGpu)

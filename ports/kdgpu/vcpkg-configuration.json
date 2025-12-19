@@ -1,19 +1,14 @@
 {
-    "default-registry": {
-        "kind": "git",
-        "baseline": "bed11935ca76d1e93906dbf742230a768882b98f",
-        "repository": "https://github.com/microsoft/vcpkg"
-    },
-    "registries": [
-        {
-            "kind": "git",
-            "repository": "https://github.com/KDAB/vcpkg-registry.git",
-            "reference": "main",
-            "baseline": "c772907262cb831865f95304c841c11982806ce8",
-            "packages": [
-                "kdutils",
-                "whereami"
-            ]
-        }
-    ]
+  "registries": [
+    {
+      "kind": "git",
+      "baseline": "723b5e00d56836caaa54a663d590ec07aa0abbd2",
+      "reference": "main",
+      "repository": "https://github.com/KDAB/vcpkg-registry.git",
+      "packages": [
+        "kdutils",
+        "whereami"
+      ]
+    }
+  ]
 }

@@ -5,7 +5,7 @@
   "homepage": "https://github.com/KDAB/kdgpu",
   "license": "MIT",
   "supports": "(windows | linux | android | osx) & (arm | x86 | x64)",
-  "builtin-baseline": "faf665cf8aca288b636d9de887f5cdfa3cff1a9e",
+  "builtin-baseline": "d2452281016c6d77b6ef199d599d9929eafe4807",
   "dependencies": [
     {
       "name": "spdlog",

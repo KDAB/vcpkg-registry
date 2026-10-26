@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO KDAB/KDGpu
-    REF 22cb53e00dafa0a3ce2ed77bc77a7ac36b6d3a68
-    SHA512 5666e6ba8454a812147430ed6c99a5030bc6ec41e85235f0120f3c90a5b393032aaa86d79c7bd92d37381a49a802227963c7e96380251b3fbe61750ca59464e0
+    REF 36570d22d2ca35a2a28406d5ddf2ca9f9b7c3f7b # vcpkg branch
+    SHA512 aa6d1cd9951e0a3c320443a0ed090b8b6d94ba0547ef4b7ca71c0982bf70d61887ecce997bf49fa63f84632840e07771eb4c4be5fd0077b26d6285860cba68f2
     HEAD_REF main
 )
 
@@ -11,8 +11,10 @@ vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
         kdgpuutils KDGPU_BUILD_KDGPUUTILS
         testing    KDGPU_BUILD_TESTS
 	examples   KDGPU_BUILD_EXAMPLES
+	examples   KDGPU_BUILD_KDGPUEXAMPLE
 	kdgpukdgui KDGPU_BUILD_KDGPUKDGUI
 	hlsl	   KDGPU_HLSL_SUPPORT
+	slang      KDGPU_SLANG_SUPPORT
 	openxr	   KDGPU_BUILD_KDXR
 )
 
@@ -48,6 +50,12 @@ if(EXISTS "${CURRENT_PACKAGES_DIR}/lib/cmake")
     endif()
 endif()
 
+# Remove leftover CMake config dirs and debug share
+file(REMOVE_RECURSE
+    "${CURRENT_PACKAGES_DIR}/debug/share"
+    "${CURRENT_PACKAGES_DIR}/lib/cmake"
+    "${CURRENT_PACKAGES_DIR}/debug/lib/cmake"
+)
 
 # Copy usage file if it exists
 if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/usage")

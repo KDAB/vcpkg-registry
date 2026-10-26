@@ -1,4 +1,0 @@
-whereami provides CMake targets:
-
-find_package(whereami CONFIG REQUIRED)
-target_link_libraries(main PRIVATE whereami::whereami)

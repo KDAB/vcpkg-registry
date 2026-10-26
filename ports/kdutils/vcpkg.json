@@ -1,10 +1,10 @@
 {
   "name": "kdutils",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "KD Utilities Library - Core utilities and helper functions",
   "homepage": "https://github.com/KDAB/kdutils",
   "license": "MIT",
-  "supports": "(windows | linux | android | osx) & (arm | x86 | x64)",
+  "supports": "!uwp & (windows | linux | android | osx) & (arm | x86 | x64)",
   "dependencies": [
     {
       "name": "kdbindings",
@@ -28,7 +28,7 @@
     },
     {
       "name": "whereami",
-      "version>=": "0.0.1"
+      "version>=": "2024-08-26"
     }
   ],
   "features": {

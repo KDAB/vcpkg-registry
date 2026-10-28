@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO KDAB/KDUtils
-    REF a9b17926a41c3e07c7d503d10784204c0df690d5 # fix_kdgui_cmake_config branch
-    SHA512 c2f693b2edc4291ec7b105c80c19dbfce1475129697d24a55b3155be41d9ff70bc009ca7de322170134c21833e14948e87a1a7bcbb6dff69b7485f8807111fcf
+    REF fa432fa56944cd96fa1e13469887ea50bc86875f # integration-paul branch
+    SHA512 da8f8a35b9f6ce3ea4edb170e2ba1ac1add69873d48728d9e8e3ff4bebd2b30040f75bb02d492de52f087050919041ecf20aae9a7fa5c73137890d9f271430f1
     HEAD_REF main
 )
 

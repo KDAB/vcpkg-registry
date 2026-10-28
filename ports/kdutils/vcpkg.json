@@ -1,6 +1,7 @@
 {
   "name": "kdutils",
   "version": "0.1.13",
+  "port-version": 1,
   "description": "KD Utilities Library - Core utilities and helper functions",
   "homepage": "https://github.com/KDAB/kdutils",
   "license": "MIT",
